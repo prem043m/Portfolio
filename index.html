@@ -22,12 +22,16 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero-text">
-      <h2>Hi, I'm <span>Prem Mahaveer Kamble</span></h2>
-      <p>Computer Science Student | Aspiring Software Engineer</p>
-      <div class="buttons">
-        <a href="https://github.com/prem043m?tab=repositories" class="btn primary">View Projects</a>
-        <a href="asstes/PremKamble_InternshalaResume.pdf" class="btn secondary">Download Resume</a>
+    <div class="hero-inner">
+      <div class="avatar">PM</div>
+      <div class="hero-text">
+        <h2>Hi, I'm <span>Prem Mahaveer Kamble</span></h2>
+        <p class="lead">Computer Science Undergraduate • Software Engineer in training</p>
+        <p class="sub">Building full-stack web apps, data-driven projects, and scalable backend services.</p>
+        <div class="buttons">
+          <a href="https://github.com/prem043m?tab=repositories" class="btn primary">View Projects</a>
+          <a href="asstes/PremKamble_InternshalaResume.pdf" class="btn secondary">Download Resume</a>
+        </div>
       </div>
     </div>
   </section>
@@ -36,7 +40,7 @@
   <section id="about" class="section">
     <h3 class="section-title">About Me</h3>
     <p class="section-desc">
-      I am a Computer Science undergraduate in M S Ramaiah Institute of Technology, Bangalore. I have a strong foundation in programming languages such as C, C++, Java, and Python. I am passionate about web development and have experience with HTML, CSS, JavaScript, Node.js, and React.js. Additionally, I have worked with databases like MySQL and MongoDB. I am eager to apply my skills in real-world projects and contribute to innovative solutions.
+      I am a Computer Science undergraduate at M S Ramaiah Institute of Technology, Bangalore. I enjoy designing and implementing reliable software systems, building intuitive web interfaces, and applying data-driven approaches to solve problems. My core strengths include problem solving, strong fundamentals in algorithms and data structures, and practical experience with modern web and backend technologies.
     </p>
   </section>
 
@@ -48,22 +52,27 @@
       <div class="skill-card">
         <h4>Programming</h4>
         <p>C, C++, Java, Python</p>
+        <div class="skill-bar"><span style="--w:85%">85%</span></div>
       </div>
       <div class="skill-card">
         <h4>Web & Backend</h4>
         <p>HTML, CSS, JavaScript, Node.js, React.js</p>
+        <div class="skill-bar"><span style="--w:80%">80%</span></div>
       </div>
       <div class="skill-card">
-        <h4>Database</h4>
+        <h4>Databases</h4>
         <p>MySQL, MongoDB</p>
-      </div>
-          <div class="skill-card">
-        <h4>Data Anylysis And Machine Learing</h4>
-        <p>Python, R Programming</p>
+        <div class="skill-bar"><span style="--w:75%">75%</span></div>
       </div>
       <div class="skill-card">
-        <h4>Tools</h4>
-        <p>Git, GitHub, VS Code, intelliJ</p>
+        <h4>Data Analysis & ML</h4>
+        <p>Python, pandas, scikit-learn, Streamlit</p>
+        <div class="skill-bar"><span style="--w:65%">65%</span></div>
+      </div>
+      <div class="skill-card">
+        <h4>Tools & Workflow</h4>
+        <p>Git, GitHub, VS Code, IntelliJ</p>
+        <div class="skill-bar"><span style="--w:80%">80%</span></div>
       </div>
     </div>
   </section>
@@ -74,15 +83,38 @@
 
     <div class="project-grid">
       <div class="project-card">
-        <h4> Movie_Recommender_System </h4>
-        <p>A Movie Recommendation System built with Streamlit that suggests similar movies based on content features. It displays posters, genres, cast, crew, and overviews, helping users easily discover and explore new films they may enjoy.</p>
-        <span>Python • Flask • Streamlit</span>
+        <h4>Movie Recommender System</h4>
+        <p>Content-based movie recommendation built with Python and Streamlit. Shows posters, metadata and recommendations using similarity metrics.</p>
+        <a href="https://github.com/prem043m/movie-recommender" class="project-link">View on GitHub</a>
+        <span>Python • Streamlit • pandas</span>
       </div>
 
       <div class="project-card">
-        <h4>Spotify_app_clone</h4>
-        <p>I developed a Spotify-like music streaming app using Flutter and Dart with features like search, category browsing, personalized library, and audio playback.</p>
+        <h4>Spotify Clone (Flutter)</h4>
+        <p>Prototype music streaming app with search, playback controls and category browsing. Built with Flutter for cross-platform UI.</p>
+        <a href="https://github.com/prem043m/spotify-clone" class="project-link">View on GitHub</a>
         <span>Flutter • Dart</span>
+      </div>
+
+      <div class="project-card">
+        <h4>Portfolio Website</h4>
+        <p>This responsive portfolio (you are viewing) showcases projects, skills, and contact information. Built with plain HTML and CSS.</p>
+        <span>HTML • CSS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION & EXPERIENCE ===== -->
+  <section id="education" class="section dark">
+    <h3 class="section-title">Education & Experience</h3>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h4>B.E. Computer Science</h4>
+        <p>M S Ramaiah Institute of Technology, Bangalore — 2023 - Present</p>
+      </div>
+      <div class="edu-card">
+        <h4>Internships</h4>
+        <p>Summer Intern — Worked on backend APIs and automation scripts. (Details available on request / resume)</p>
       </div>
     </div>
   </section>
@@ -92,9 +124,10 @@
     <h3 class="section-title">Contact</h3>
 
     <div class="contact-box">
-      <p>Email: premkamble@email.com</p>
-      <p>GitHub: github.com/premkamble</p>
-      <p>LinkedIn: linkedin.com/in/premkamble</p>
+      <p><strong>Email:</strong> <a href="mailto:premkamble@email.com">premkamble@email.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/prem043m" target="_blank">github.com/prem043m</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/premkamble" target="_blank">linkedin.com/in/premkamble</a></p>
+      <p><strong>Resume:</strong> <a href="asstes/PremKamble_InternshalaResume.pdf" target="_blank">Download PDF</a></p>
     </div>
   </section>
 
