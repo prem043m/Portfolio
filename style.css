@@ -60,7 +60,9 @@ body {
   padding: 1.2rem 8%;
   position: sticky;
   top: 0;
-  background: white;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
@@ -69,10 +71,11 @@ body {
 }
 
 .navbar nav a {
-  margin-left: 20px;
+  margin-left: 16px;
   text-decoration: none;
   color: var(--dark);
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .navbar nav a:hover {
@@ -105,6 +108,7 @@ body {
   border-radius: 6px;
   text-decoration: none;
   margin-right: 10px;
+  display: inline-block;
 }
 
 .primary {
@@ -120,6 +124,12 @@ body {
 /* SECTIONS */
 .section {
   padding: 80px 8%;
+}
+
+#objective,
+#certifications,
+#connect {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
 }
 
 .dark {
@@ -179,11 +189,12 @@ body {
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
 }
 
 .project-card span {
@@ -205,6 +216,35 @@ body {
 /* CONTACT */
 .contact-box p {
   margin-bottom: 10px;
+}
+
+.contact-box a {
+  color: inherit;
+}
+
+.dark .contact-box a {
+  color: #c7d2fe;
+}
+
+.badge-wall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tech-icons img {
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 /* EDUCATION */
@@ -230,9 +270,32 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 5%;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar nav a {
+    margin-left: 0;
+  }
+
   .hero-text h2 {
     font-size: 2.2rem;
   }
   .hero-inner { flex-direction: column; text-align: center; }
   .avatar { margin: 0 auto; }
+
+  .hero {
+    min-height: 85vh;
+    height: auto;
+    padding: 60px 8%;
+  }
 }
