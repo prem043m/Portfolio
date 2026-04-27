@@ -132,6 +132,10 @@ body {
   background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
 }
 
+#progress {
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+}
+
 .dark {
   background: var(--dark);
   color: white;
@@ -212,6 +216,22 @@ body {
   font-weight: 600;
 }
 .project-link:hover { text-decoration: underline; }
+
+.progress-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 8px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+}
+
+.project-points {
+  margin: 12px 0 4px 18px;
+}
+
+.project-points li {
+  margin-bottom: 6px;
+  color: #334155;
+}
 
 /* CONTACT */
 .contact-box p {
