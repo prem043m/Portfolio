@@ -9,8 +9,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Poppins', "Segoe UI", sans-serif;
 }
+
+html { scroll-behavior: smooth; }
 
 body {
   background: var(--light);
